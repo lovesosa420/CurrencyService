@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package currency_service_v1;
+
+option go_package = "CurrencyService/pkg/currency_service_v1_v1;currency_service_v1_v1";
+
+service CurrencyV1 {
+  rpc GetCourse(GetCourseRequest) returns (GetCourseResponse);
+}
+
+message GetCourseRequest {
+  string name = 1;
+}
+
+message GetCourseResponse {
+  string value = 1;
+}
