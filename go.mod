@@ -1,5 +1,5 @@
-module CurrencyService
-
+module github.com/lovesosa420/CurrencyService
+   
 go 1.24
 
 require (
