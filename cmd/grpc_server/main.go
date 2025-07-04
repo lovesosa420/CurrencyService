@@ -1,15 +1,15 @@
 package main
 
 import (
-	"CurrencyService/internal/interceptors/logging"
-	"CurrencyService/internal/interceptors/metrics"
-	"CurrencyService/internal/interceptors/tracing"
-	"CurrencyService/internal/repository/redis"
-	"CurrencyService/internal/scraper/currency"
-	desc "CurrencyService/pkg/currency_service_v1"
 	"errors"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	opentracing "github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
+	"github.com/lovesosa420/CurrencyService/internal/interceptors/logging"
+	"github.com/lovesosa420/CurrencyService/internal/interceptors/metrics"
+	"github.com/lovesosa420/CurrencyService/internal/interceptors/tracing"
+	"github.com/lovesosa420/CurrencyService/internal/repository/redis"
+	"github.com/lovesosa420/CurrencyService/internal/scraper/currency"
+	desc "github.com/lovesosa420/CurrencyService/pkg/currency_service_v1"
 	opentrace "github.com/opentracing/opentracing-go"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"golang.org/x/net/context"
